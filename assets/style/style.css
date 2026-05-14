@@ -1,0 +1,400 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#473425;
+    color:#e7dccd;
+
+    font-family:'Inter', sans-serif;
+    font-weight:300;
+
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+    width:100%;
+
+    padding:20px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    /* border-bottom:1px solid #3a3028; */
+
+    background:#28201c;
+}
+
+.logo{
+    font-family:'Cormorant Garamond', serif;
+    font-size:3rem;
+    color:#f3e7d7;
+}
+
+nav{
+    display:flex;
+    gap:42px;
+}
+
+nav a{
+    color:#c8b8a3;
+    font-size:0.95rem;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#f3e7d7;
+}
+
+/* ========================= */
+/* MAIN */
+/* ========================= */
+
+main{
+    padding:70px 80px 100px;
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+
+    gap:90px;
+    align-items:center;
+
+    margin-bottom:120px;
+}
+
+.hero-text h1{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:6rem;
+    line-height:0.95;
+    font-weight:500;
+
+    color:#f2e6d6;
+
+    margin-bottom:40px;
+}
+
+.hero-text p{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:2rem;
+    line-height:1.5;
+
+    color:#b9aa97;
+}
+
+.hero-image img{
+    height:700px;
+
+    object-fit:cover;
+
+    border-radius:2px;
+
+    filter:
+    brightness(0.65)
+    sepia(0.35)
+    contrast(1.05);
+
+    box-shadow:0 0 40px rgba(0,0,0,0.35);
+}
+
+/* ========================= */
+/* SEÇÕES */
+/* ========================= */
+
+.content-section{
+    margin-bottom:90px;
+}
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+
+    border-bottom:1px solid #3a3028;
+
+    padding-bottom:14px;
+}
+
+.section-title h2{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:2.2rem;
+    font-weight:500;
+
+    color:#f0e4d5;
+}
+
+.section-title a{
+    color:#bca994;
+    transition:0.3s;
+}
+
+.section-title a:hover{
+    color:#f2e6d6;
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(420px, 1fr));
+    gap:28px;
+}
+
+.post-card{
+    background:#211b17;
+
+    border:1px solid #3a3028;
+
+    padding:42px;
+
+    min-height:520px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    transition:0.35s ease;
+}
+
+.post-card:hover{
+    transform:translateY(-4px);
+
+    background:#261f1a;
+
+    border-color:#5a493c;
+}
+
+.category{
+    font-size:0.78rem;
+
+    letter-spacing:2px;
+
+    color:#9f8d7c;
+
+    margin-bottom:20px;
+}
+
+.post-card h3{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:3.2rem;
+    font-weight:500;
+
+    color:#f1e4d3;
+
+    margin-bottom:28px;
+}
+
+.post-text{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:1.65rem;
+    line-height:1.7;
+
+    color:#d5c7b8;
+
+    flex:1;
+}
+
+.meta{
+    margin-top:40px;
+
+    color:#887768;
+
+    font-size:0.92rem;
+}
+
+/* ========================= */
+/* QUOTE */
+/* ========================= */
+
+.quote{
+    text-align:center;
+
+    padding:90px 20px 20px;
+}
+
+.quote-symbol{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:5rem;
+
+    color:#8f7c69;
+
+    margin-bottom:10px;
+}
+
+.quote p{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:2.6rem;
+    line-height:1.6;
+
+    color:#e6d9ca;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+    border-top:1px solid #3a3028;
+
+    padding:40px 80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#161210;
+}
+
+.footer-left{
+    color:#8f7d6d;
+
+    line-height:1.7;
+}
+
+.footer-center{
+    color:#8f7d6d;
+
+    font-size:2rem;
+}
+
+.footer-right{
+    display:flex;
+    gap:22px;
+}
+
+.footer-right a{
+    color:#b7a693;
+    transition:0.3s;
+}
+
+.footer-right a:hover{
+    color:#f3e7d7;
+}
+
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+
+@media(max-width:1000px){
+
+    header{
+        flex-direction:column;
+        gap:24px;
+
+        padding:28px 30px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+
+        gap:22px;
+    }
+
+    main{
+        padding:50px 30px 80px;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+    }
+
+    .hero-text{
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:4.5rem;
+    }
+
+    .hero-text p{
+        font-size:1.6rem;
+    }
+
+    .hero-image img{
+        height:500px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:20px;
+
+        text-align:center;
+
+        padding:30px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .logo{
+        font-size:2.5rem;
+    }
+
+    .hero-text h1{
+        font-size:3.3rem;
+    }
+
+    .hero-text p{
+        font-size:1.3rem;
+    }
+
+    .post-card{
+        padding:30px;
+
+        min-height:unset;
+    }
+
+    .post-card h3{
+        font-size:2.4rem;
+    }
+
+    .post-text{
+        font-size:1.35rem;
+    }
+
+    .quote p{
+        font-size:1.8rem;
+    }
+
+}
